@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeAlpha FAQ Bot</title>
+</head>
+<body>
+    <h1>Welcome to FAQ Bot</h1>
+    <form method="POST">
+        <input type="text" name="question" placeholder="Ask me anything">
+        <button type="submit">Send</button>
+    </form>
+    {% if answer %}
+    <p><b>Answer:</b> {{ answer }}</p>
+    {% endif %}
+</body>
+</html>
